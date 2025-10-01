@@ -7,150 +7,133 @@
   },
   "variable": [
     {
-      "key": "port",
-      "value": "7034"
+      "key": "T1_COMBO_CLASSIC_ID",
+      "value": "416EC7AC-BE5B-8926-D7C5-8358AE9E1681"
     },
     {
-      "key": "baseUrl",
-      "value": "https://localhost:{{port}}"
+      "key": "T1_COMBO_BBQ_ID",
+      "value": "0E6E7F41-23F3-8E05-F20C-5362F062E9DB"
     },
     {
-      "key": "lang",
-      "value": "en"
+      "key": "T1_COMBO_CHICKEN_ID",
+      "value": "7F76DEC4-BA09-2561-5639-064D282FC7CD"
     },
     {
-      "key": "tenantId",
-      "value": "1"
-    },
-
-    {
-      "key": "t1_combo_classic_id",
-      "value": "acc76e41-5bbe-2689-d7c5-8358ae9e1681"
-    },
-    {
-      "key": "t1_combo_bbq_id",
-      "value": "417f6e0e-f323-058e-f20c-5362f062e9db"
-    },
-    {
-      "key": "t1_combo_chicken_id",
-      "value": "c4de767f-09ba-6125-5639-064d282fc7cd"
-    },
-    {
-      "key": "t1_combo_double_cheese_id",
-      "value": "974a7512-1bd5-8988-f948-1750ecf94d5c"
+      "key": "T1_COMBO_DOUBLE_CHEESE_ID",
+      "value": "12754A97-D51B-8889-F948-1750ECF94D5C"
     },
 
     {
-      "key": "t1_mat_brioche_bun_id",
-      "value": "a6e60fe1-87a3-474a-e12b-be81a53b19b1"
+      "key": "T1_MAT_BRIOCHE_BUN_ID",
+      "value": "E10FE6A6-A387-4A47-E12B-BE81A53B19B1"
     },
     {
-      "key": "t1_mat_sesame_bun_id",
-      "value": "e9acf5c1-2a45-3ac2-0004-92023e3ce5ce"
+      "key": "T1_MAT_SESAME_BUN_ID",
+      "value": "C1F5ACE9-452A-C23A-0004-92023E3CE5CE"
     },
     {
-      "key": "t1_mat_beef_patty_id",
-      "value": "77278f23-e873-46da-7099-7564dc8f9370"
+      "key": "T1_MAT_BEEF_PATTY_ID",
+      "value": "238F2777-73E8-DA46-7099-7564DC8F9370"
     },
     {
-      "key": "t1_mat_chicken_fillet_id",
-      "value": "76838523-d4a7-320f-6701-fe9645c7a8f6"
+      "key": "T1_MAT_CHICKEN_FILLET_ID",
+      "value": "23858376-A7D4-0F32-6701-FE9645C7A8F6"
     },
     {
-      "key": "t1_mat_cheddar_slice_id",
-      "value": "741dfafe-a292-f1e5-7af7-5df004c6e73a"
+      "key": "T1_MAT_CHEDDAR_SLICE_ID",
+      "value": "FEFA1D74-92A2-E5F1-7AF7-5DF004C6E73A"
     },
     {
-      "key": "t1_mat_swiss_cheese_id",
-      "value": "e69f56c7-b737-71af-2424-112bd2f5b299"
+      "key": "T1_MAT_SWISS_CHEESE_ID",
+      "value": "C7569FE6-37B7-AF71-2424-112BD2F5B299"
     },
     {
-      "key": "t1_mat_lettuce_id",
-      "value": "dcea8fc8-b2ee-58be-5fbb-684f00e0c8f4"
+      "key": "T1_MAT_LETTUCE_ID",
+      "value": "C88FEADC-EEB2-BE58-5FBB-684F00E0C8F4"
     },
     {
-      "key": "t1_mat_tomato_id",
-      "value": "7bfef91a-e67a-6586-eaf1-6d388fb8ee72"
+      "key": "T1_MAT_TOMATO_ID",
+      "value": "1AF9FE7B-7AE6-8665-EAF1-6D388FB8EE72"
     },
     {
-      "key": "t1_mat_onion_id",
-      "value": "1a5d35ba-6afa-f390-d3cf-dbde681c839d"
+      "key": "T1_MAT_ONION_ID",
+      "value": "BA355D1A-FA6A-90F3-D3CF-DBDE681C839D"
     },
     {
-      "key": "t1_mat_pickles_id",
-      "value": "12c15615-5050-8316-1997-a7aa4c1af717"
+      "key": "T1_MAT_PICKLES_ID",
+      "value": "1556C112-5050-1683-1997-A7AA4C1AF717"
     },
     {
-      "key": "t1_mat_fries_id",
-      "value": "de28c613-f204-a147-3b6e-c36e10501e0f"
+      "key": "T1_MAT_FRIES_ID",
+      "value": "13C628DE-04F2-47A1-3B6E-C36E10501E0F"
     },
     {
-      "key": "t1_mat_coleslaw_id",
-      "value": "b5deb5f2-b2f1-9ade-b562-29c8b3f9b584"
+      "key": "T1_MAT_COLESLAW_ID",
+      "value": "F2B5DEB5-F1B2-DE9A-B562-29C8B3F9B584"
     },
     {
-      "key": "t1_mat_jalapenos_id",
-      "value": "5a520880-0529-1cc0-d91d-9abe1a2ca16a"
+      "key": "T1_MAT_JALAPENOS_ID",
+      "value": "8008525A-2905-C01C-D91D-9ABE1A2CA16A"
     },
     {
-      "key": "t1_mat_mushrooms_id",
-      "value": "064334ff-ff81-1adf-4121-d18dfe25b2cd"
+      "key": "T1_MAT_MUSHROOMS_ID",
+      "value": "FF344306-81FF-DF1A-4121-D18DFE25B2CD"
     },
     {
-      "key": "t1_mat_bacon_bits_id",
-      "value": "7b234f71-22e8-2e1e-ec09-7b52721d1a0e"
-    },
-
-    {
-      "key": "t1_add_bbq_sauce_id",
-      "value": "8ef99009-055a-db27-2d66-48418f559836"
-    },
-    {
-      "key": "t1_add_ketchup_id",
-      "value": "98f3f6b0-7843-3eb5-8d65-11232ad9aa69"
-    },
-    {
-      "key": "t1_add_mayo_id",
-      "value": "f161477f-7d61-641b-3215-9744c2975aa2"
-    },
-    {
-      "key": "t1_add_extra_cheese_id",
-      "value": "6b963f38-7512-d592-d63e-850bf939242c"
-    },
-    {
-      "key": "t1_add_cola_can_id",
-      "value": "b8a63f67-cda7-30b7-1a00-565d8a2c4979"
+      "key": "T1_MAT_BACON_BITS_ID",
+      "value": "714F237B-E822-1E2E-EC09-7B52721D1A0E"
     },
 
     {
-      "key": "t1_order_0",
-      "value": "0ea3a6b8-c368-4f10-3298-f32f10b52ec0"
+      "key": "T1_ADD_BBQ_SAUCE_ID",
+      "value": "0990F98E-5A05-27DB-2D66-48418F559836"
     },
     {
-      "key": "t1_order_1",
-      "value": "601d6ca9-597f-c487-f8c8-a05dfc510ab5"
+      "key": "T1_ADD_KETCHUP_ID",
+      "value": "B0F6F398-4378-B53E-8D65-11232AD9AA69"
     },
     {
-      "key": "t1_order_2",
-      "value": "f3ba5a82-9a53-c42c-905a-b5e6645e800f"
-    },
-
-    {
-      "key": "t2_mat_pizza_dough_id",
-      "value": "a516ae88-7c7b-9cec-a747-ef9668399f8a"
+      "key": "T1_ADD_MAYO_ID",
+      "value": "7F4761F1-617D-1B64-3215-9744C2975AA2"
     },
     {
-      "key": "t2_combo_margherita_id",
-      "value": "f30186e9-2a75-86f0-f4d0-e6cbd09fcd1b"
+      "key": "T1_ADD_EXTRA_CHEESE_ID",
+      "value": "383F966B-1275-92D5-D63E-850BF939242C"
     },
     {
-      "key": "t2_add_garlic_dip_id",
-      "value": "c8e80d86-7454-8b9e-4996-d674578fec15"
+      "key": "T1_ADD_COLA_CAN_ID",
+      "value": "673FA6B8-A7CD-B730-1A00-565D8A2C4979"
     },
 
     {
-      "key": "t3_mat_pita_bread_id",
-      "value": "70fdd806-4d25-ba85-6d1f-2ba07310a1c2"
+      "key": "T1_ORDER_0",
+      "value": "825ABAF3-539A-2CC4-905A-B5E6645E800F"
+    },
+    {
+      "key": "T1_ORDER_1",
+      "value": "A96C1D60-7F59-87C4-F8C8-A05DFC510AB5"
+    },
+    {
+      "key": "T1_ORDER_2",
+      "value": "B8A6A30E-68C3-104F-3298-F32F10B52EC0"
+    },
+
+    {
+      "key": "T2_MAT_PIZZA_DOUGH_ID",
+      "value": "88AE16A5-7B7C-EC9C-A747-EF9668399F8A"
+    },
+    {
+      "key": "T2_COMBO_MARGHERITA_ID",
+      "value": "E98601F3-752A-F086-F4D0-E6CBD09FCD1B"
+    },
+    {
+      "key": "T2_ADD_GARLIC_DIP_ID",
+      "value": "860DE8C8-5474-9E8B-4996-D674578FEC15"
+    },
+
+    {
+      "key": "T3_MAT_PITA_BREAD_ID",
+      "value": "06D8FD70-254D-85BA-6D1F-2BA07310A1C2"
     }
   ],
   "item": [
@@ -213,11 +196,11 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Material/{{t1_mat_beef_patty_id}}",
+              "raw": "{{baseUrl}}/API/Material/{{T1_MAT_BEEF_PATTY_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Material", "{{t1_mat_beef_patty_id}}" ]
+              "path": [ "API", "Material", "{{T1_MAT_BEEF_PATTY_ID}}" ]
             }
           }
         },
@@ -302,15 +285,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Material/{{t1_mat_cheddar_slice_id}}",
+              "raw": "{{baseUrl}}/API/Material/{{T1_MAT_CHEDDAR_SLICE_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Material", "{{t1_mat_cheddar_slice_id}}" ]
+              "path": [ "API", "Material", "{{T1_MAT_CHEDDAR_SLICE_ID}}" ]
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"id\": \"{{t1_mat_cheddar_slice_id}}\",\n  \"nameEn\": \"Cheddar Slice\",\n  \"nameAr\": \"شريحة شيدر\",\n  \"unit\": 0,\n  \"pricePerUnit\": 0.320,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/cheddar-slice\",\n  \"isActive\": true\n}"
+              "raw": "{\n  \"id\": \"{{T1_MAT_CHEDDAR_SLICE_ID}}\",\n  \"nameEn\": \"Cheddar Slice\",\n  \"nameAr\": \"شريحة شيدر\",\n  \"unit\": 0,\n  \"pricePerUnit\": 0.320,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/cheddar-slice\",\n  \"isActive\": true\n}"
             }
           }
         },
@@ -333,15 +316,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Material/{{t1_mat_brioche_bun_id}}",
+              "raw": "{{baseUrl}}/API/Material/{{T1_MAT_BRIOCHE_BUN_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Material", "{{t1_mat_brioche_bun_id}}" ]
+              "path": [ "API", "Material", "{{T1_MAT_BRIOCHE_BUN_ID}}" ]
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"id\": \"{{t1_mat_brioche_bun_id}}\",\n  \"nameEn\": \"Brioche Bun\",\n  \"nameAr\": \"خبز بريوش\",\n  \"unit\": 0,\n  \"pricePerUnit\": -0.100,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/brioche-bun\",\n  \"isActive\": true\n}"
+              "raw": "{\n  \"id\": \"{{T1_MAT_BRIOCHE_BUN_ID}}\",\n  \"nameEn\": \"Brioche Bun\",\n  \"nameAr\": \"خبز بريوش\",\n  \"unit\": 0,\n  \"pricePerUnit\": -0.100,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/brioche-bun\",\n  \"isActive\": true\n}"
             }
           }
         }
@@ -406,11 +389,11 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}",
+              "raw": "{{baseUrl}}/API/Combo/{{T1_COMBO_CLASSIC_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Combo", "{{t1_combo_classic_id}}" ]
+              "path": [ "API", "Combo", "{{T1_COMBO_CLASSIC_ID}}" ]
             }
           }
         },
@@ -441,7 +424,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nameEn\": \"Spicy Burger Meal\",\n  \"nameAr\": \"وجبة برجر حارة\",\n  \"price\": 5.900,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/combo/spicy-burger-meal\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{t1_mat_brioche_bun_id}}\",   \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_beef_patty_id}}\",    \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_cheddar_slice_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_jalapenos_id}}\",     \"quantity\": 20 },\n    { \"materialId\": \"{{t1_mat_lettuce_id}}\",       \"quantity\": 25 },\n    { \"materialId\": \"{{t1_mat_tomato_id}}\",        \"quantity\": 30 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\",         \"quantity\": 120 }\n  ]\n}"
+              "raw": "{\n  \"nameEn\": \"Spicy Burger Meal\",\n  \"nameAr\": \"وجبة برجر حارة\",\n  \"price\": 5.900,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/combo/spicy-burger-meal\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{T1_MAT_BRIOCHE_BUN_ID}}\",   \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_BEEF_PATTY_ID}}\",    \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_CHEDDAR_SLICE_ID}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_JALAPENOS_ID}}\",     \"quantity\": 20 },\n    { \"materialId\": \"{{T1_MAT_LETTUCE_ID}}\",       \"quantity\": 25 },\n    { \"materialId\": \"{{T1_MAT_TOMATO_ID}}\",        \"quantity\": 30 },\n    { \"materialId\": \"{{T1_MAT_FRIES_ID}}\",         \"quantity\": 120 }\n  ]\n}"
             }
           }
         },
@@ -472,7 +455,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"nameEn\": \"Cross-Tenant Test\",\n  \"nameAr\": \"اختبار عبر المستأجر\",\n  \"price\": 4.500,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/1/combo/cross-tenant-test\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{t2_mat_pizza_dough_id}}\", \"quantity\": 1 }\n  ]\n}"
+              "raw": "{\n  \"nameEn\": \"Cross-Tenant Test\",\n  \"nameAr\": \"اختبار عبر المستأجر\",\n  \"price\": 4.500,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/1/combo/cross-tenant-test\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{T2_MAT_PIZZA_DOUGH_ID}}\", \"quantity\": 1 }\n  ]\n}"
             }
           }
         },
@@ -494,11 +477,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}?quantity=15",
+                  "raw": "{{baseUrl}}/API/Combo/{{T1_COMBO_CLASSIC_ID}}/Material/{{T1_MAT_MUSHROOMS_ID}}?quantity=15",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ],
+                  "path": [ "API", "Combo", "{{T1_COMBO_CLASSIC_ID}}", "Material", "{{T1_MAT_MUSHROOMS_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -523,11 +506,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t2_mat_pizza_dough_id}}?quantity=1",
+                  "raw": "{{baseUrl}}/API/Combo/{{T1_COMBO_CLASSIC_ID}}/Material/{{T2_MAT_PIZZA_DOUGH_ID}}?quantity=1",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t2_mat_pizza_dough_id}}" ],
+                  "path": [ "API", "Combo", "{{T1_COMBO_CLASSIC_ID}}", "Material", "{{T2_MAT_PIZZA_DOUGH_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -552,11 +535,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}?quantity=0",
+                  "raw": "{{baseUrl}}/API/Combo/{{T1_COMBO_CLASSIC_ID}}/Material/{{T1_MAT_MUSHROOMS_ID}}?quantity=0",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ],
+                  "path": [ "API", "Combo", "{{T1_COMBO_CLASSIC_ID}}", "Material", "{{T1_MAT_MUSHROOMS_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -581,11 +564,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}",
+                  "raw": "{{baseUrl}}/API/Combo/{{T1_COMBO_CLASSIC_ID}}/Material/{{T1_MAT_MUSHROOMS_ID}}",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ]
+                  "path": [ "API", "Combo", "{{T1_COMBO_CLASSIC_ID}}", "Material", "{{T1_MAT_MUSHROOMS_ID}}" ]
                 }
               }
             }
@@ -652,11 +635,11 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}",
+              "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Order", "{{t1_order_0}}" ]
+              "path": [ "API", "Order", "{{T1_ORDER_0}}" ]
             }
           }
         },
@@ -687,7 +670,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"customerName\": \"Yousef Q.\",\n  \"customerPhone\": \"0790000010\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 150 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 2 }\n  ]\n}"
+              "raw": "{\n  \"customerName\": \"Yousef Q.\",\n  \"customerPhone\": \"0790000010\",\n  \"orderItem\": [\n    { \"comboId\": \"{{T1_COMBO_CLASSIC_ID}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_FRIES_ID}}\", \"quantity\": 150 },\n    { \"additionalMaterialId\": \"{{T1_ADD_KETCHUP_ID}}\", \"quantity\": 2 }\n  ]\n}"
             }
           }
         },
@@ -718,7 +701,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"customerName\": \"Cross Combo\",\n  \"customerPhone\": \"0790000011\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t2_combo_margherita_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 1 }\n  ]\n}"
+              "raw": "{\n  \"customerName\": \"Cross Combo\",\n  \"customerPhone\": \"0790000011\",\n  \"orderItem\": [\n    { \"comboId\": \"{{T2_COMBO_MARGHERITA_ID}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_FRIES_ID}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{T1_ADD_KETCHUP_ID}}\", \"quantity\": 1 }\n  ]\n}"
             }
           }
         },
@@ -749,7 +732,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"customerName\": \"Cross Material\",\n  \"customerPhone\": \"0790000012\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t2_mat_pizza_dough_id}}\", \"quantity\": 1 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 1 }\n  ]\n}"
+              "raw": "{\n  \"customerName\": \"Cross Material\",\n  \"customerPhone\": \"0790000012\",\n  \"orderItem\": [\n    { \"comboId\": \"{{T1_COMBO_CLASSIC_ID}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{T2_MAT_PIZZA_DOUGH_ID}}\", \"quantity\": 1 },\n    { \"additionalMaterialId\": \"{{T1_ADD_KETCHUP_ID}}\", \"quantity\": 1 }\n  ]\n}"
             }
           }
         },
@@ -780,7 +763,7 @@
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"customerName\": \"Cross Additional\",\n  \"customerPhone\": \"0790000013\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{t2_add_garlic_dip_id}}\", \"quantity\": 1 }\n  ]\n}"
+              "raw": "{\n  \"customerName\": \"Cross Additional\",\n  \"customerPhone\": \"0790000013\",\n  \"orderItem\": [\n    { \"comboId\": \"{{T1_COMBO_CLASSIC_ID}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{T1_MAT_FRIES_ID}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{T2_ADD_GARLIC_DIP_ID}}\", \"quantity\": 1 }\n  ]\n}"
             }
           }
         },
@@ -803,15 +786,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Order/{{t1_order_1}}",
+              "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_1}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Order", "{{t1_order_1}}" ]
+              "path": [ "API", "Order", "{{T1_ORDER_1}}" ]
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"id\": \"{{t1_order_1}}\",\n  \"customerName\": \"Sara Hussein\",\n  \"customerPhone\": \"0790000002\",\n  \"orderItem\": [\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": -5 }\n  ]\n}"
+              "raw": "{\n  \"id\": \"{{T1_ORDER_1}}\",\n  \"customerName\": \"Sara Hussein\",\n  \"customerPhone\": \"0790000002\",\n  \"orderItem\": [\n    { \"materialId\": \"{{T1_MAT_FRIES_ID}}\", \"quantity\": -5 }\n  ]\n}"
             }
           }
         },
@@ -834,15 +817,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/Order/{{t1_order_2}}",
+              "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_2}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "Order", "{{t1_order_2}}" ]
+              "path": [ "API", "Order", "{{T1_ORDER_2}}" ]
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"id\": \"{{t1_order_2}}\",\n  \"customerName\": \"Omar Nasser\",\n  \"customerPhone\": \"0790000003\",\n  \"orderItem\": []\n}"
+              "raw": "{\n  \"id\": \"{{T1_ORDER_2}}\",\n  \"customerName\": \"Omar Nasser\",\n  \"customerPhone\": \"0790000003\",\n  \"orderItem\": []\n}"
             }
           }
         },
@@ -864,11 +847,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Material/{{t1_mat_bacon_bits_id}}?quantity=10",
+                  "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}/Item/Material/{{T1_MAT_BACON_BITS_ID}}?quantity=10",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Material", "{{t1_mat_bacon_bits_id}}" ],
+                  "path": [ "API", "Order", "{{T1_ORDER_0}}", "Item", "Material", "{{T1_MAT_BACON_BITS_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -893,11 +876,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Material/{{t3_mat_pita_bread_id}}?quantity=1",
+                  "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}/Item/Material/{{T3_MAT_PITA_BREAD_ID}}?quantity=1",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Material", "{{t3_mat_pita_bread_id}}" ],
+                  "path": [ "API", "Order", "{{T1_ORDER_0}}", "Item", "Material", "{{T3_MAT_PITA_BREAD_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -922,11 +905,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Combo/{{t2_combo_margherita_id}}?quantity=1",
+                  "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}/Item/Combo/{{T2_COMBO_MARGHERITA_ID}}?quantity=1",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Combo", "{{t2_combo_margherita_id}}" ],
+                  "path": [ "API", "Order", "{{T1_ORDER_0}}", "Item", "Combo", "{{T2_COMBO_MARGHERITA_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -951,11 +934,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Additional/{{t2_add_garlic_dip_id}}?quantity=1",
+                  "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}/Item/Additional/{{T2_ADD_GARLIC_DIP_ID}}?quantity=1",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Additional", "{{t2_add_garlic_dip_id}}" ],
+                  "path": [ "API", "Order", "{{T1_ORDER_0}}", "Item", "Additional", "{{T2_ADD_GARLIC_DIP_ID}}" ],
                   "query": [
                     {
                       "key": "quantity",
@@ -980,11 +963,11 @@
                   }
                 ],
                 "url": {
-                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/OrderItem/{{t1_mat_fries_id}}",
+                  "raw": "{{baseUrl}}/API/Order/{{T1_ORDER_0}}/Item/OrderItem/{{T1_MAT_FRIES_ID}}",
                   "protocol": "https",
                   "host": [ "localhost" ],
                   "port": "{{port}}",
-                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "OrderItem", "{{t1_mat_fries_id}}" ]
+                  "path": [ "API", "Order", "{{T1_ORDER_0}}", "Item", "OrderItem", "{{T1_MAT_FRIES_ID}}" ]
                 }
               }
             }
@@ -1051,11 +1034,11 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{t1_add_ketchup_id}}",
+              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{T1_ADD_KETCHUP_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "AdditionalMaterial", "{{t1_add_ketchup_id}}" ]
+              "path": [ "API", "AdditionalMaterial", "{{T1_ADD_KETCHUP_ID}}" ]
             }
           }
         },
@@ -1109,15 +1092,15 @@
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{t1_add_bbq_sauce_id}}",
+              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{T1_ADD_BBQ_SAUCE_ID}}",
               "protocol": "https",
               "host": [ "localhost" ],
               "port": "{{port}}",
-              "path": [ "API", "AdditionalMaterial", "{{t1_add_bbq_sauce_id}}" ]
+              "path": [ "API", "AdditionalMaterial", "{{T1_ADD_BBQ_SAUCE_ID}}" ]
             },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"id\": \"{{t1_add_bbq_sauce_id}}\",\n  \"nameEn\": \"BBQ Sauce Cup\",\n  \"nameAr\": \"كوب باربكيو\",\n  \"unit\": 1,\n  \"pricePerUnit\": -0.005,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/additional-material/bbq-sauce-cup\",\n  \"isActive\": true\n}"
+              "raw": "{\n  \"id\": \"{{T1_ADD_BBQ_SAUCE_ID}}\",\n  \"nameEn\": \"BBQ Sauce Cup\",\n  \"nameAr\": \"كوب باربكيو\",\n  \"unit\": 1,\n  \"pricePerUnit\": -0.005,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/additional-material/bbq-sauce-cup\",\n  \"isActive\": true\n}"
             }
           }
         }
