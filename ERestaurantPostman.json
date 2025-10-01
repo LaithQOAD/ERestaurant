@@ -1,0 +1,1127 @@
+{
+  "info": {
+    "name": "ERestaurant API – Tenant Aware Tests",
+    "_postman_id": "d6d0a9d5-8b2e-4f4a-9d9f-0b5d5f35a001",
+    "description": "CRUD & negative tests for Materials, Combos (+ ComboMaterials), Orders (+ OrderItems) with tenant isolation.\nHeaders required: X-Accept-Language, X-Tenant-Id.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "port",
+      "value": "7034"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:{{port}}"
+    },
+    {
+      "key": "lang",
+      "value": "en"
+    },
+    {
+      "key": "tenantId",
+      "value": "1"
+    },
+
+    {
+      "key": "t1_combo_classic_id",
+      "value": "acc76e41-5bbe-2689-d7c5-8358ae9e1681"
+    },
+    {
+      "key": "t1_combo_bbq_id",
+      "value": "417f6e0e-f323-058e-f20c-5362f062e9db"
+    },
+    {
+      "key": "t1_combo_chicken_id",
+      "value": "c4de767f-09ba-6125-5639-064d282fc7cd"
+    },
+    {
+      "key": "t1_combo_double_cheese_id",
+      "value": "974a7512-1bd5-8988-f948-1750ecf94d5c"
+    },
+
+    {
+      "key": "t1_mat_brioche_bun_id",
+      "value": "a6e60fe1-87a3-474a-e12b-be81a53b19b1"
+    },
+    {
+      "key": "t1_mat_sesame_bun_id",
+      "value": "e9acf5c1-2a45-3ac2-0004-92023e3ce5ce"
+    },
+    {
+      "key": "t1_mat_beef_patty_id",
+      "value": "77278f23-e873-46da-7099-7564dc8f9370"
+    },
+    {
+      "key": "t1_mat_chicken_fillet_id",
+      "value": "76838523-d4a7-320f-6701-fe9645c7a8f6"
+    },
+    {
+      "key": "t1_mat_cheddar_slice_id",
+      "value": "741dfafe-a292-f1e5-7af7-5df004c6e73a"
+    },
+    {
+      "key": "t1_mat_swiss_cheese_id",
+      "value": "e69f56c7-b737-71af-2424-112bd2f5b299"
+    },
+    {
+      "key": "t1_mat_lettuce_id",
+      "value": "dcea8fc8-b2ee-58be-5fbb-684f00e0c8f4"
+    },
+    {
+      "key": "t1_mat_tomato_id",
+      "value": "7bfef91a-e67a-6586-eaf1-6d388fb8ee72"
+    },
+    {
+      "key": "t1_mat_onion_id",
+      "value": "1a5d35ba-6afa-f390-d3cf-dbde681c839d"
+    },
+    {
+      "key": "t1_mat_pickles_id",
+      "value": "12c15615-5050-8316-1997-a7aa4c1af717"
+    },
+    {
+      "key": "t1_mat_fries_id",
+      "value": "de28c613-f204-a147-3b6e-c36e10501e0f"
+    },
+    {
+      "key": "t1_mat_coleslaw_id",
+      "value": "b5deb5f2-b2f1-9ade-b562-29c8b3f9b584"
+    },
+    {
+      "key": "t1_mat_jalapenos_id",
+      "value": "5a520880-0529-1cc0-d91d-9abe1a2ca16a"
+    },
+    {
+      "key": "t1_mat_mushrooms_id",
+      "value": "064334ff-ff81-1adf-4121-d18dfe25b2cd"
+    },
+    {
+      "key": "t1_mat_bacon_bits_id",
+      "value": "7b234f71-22e8-2e1e-ec09-7b52721d1a0e"
+    },
+
+    {
+      "key": "t1_add_bbq_sauce_id",
+      "value": "8ef99009-055a-db27-2d66-48418f559836"
+    },
+    {
+      "key": "t1_add_ketchup_id",
+      "value": "98f3f6b0-7843-3eb5-8d65-11232ad9aa69"
+    },
+    {
+      "key": "t1_add_mayo_id",
+      "value": "f161477f-7d61-641b-3215-9744c2975aa2"
+    },
+    {
+      "key": "t1_add_extra_cheese_id",
+      "value": "6b963f38-7512-d592-d63e-850bf939242c"
+    },
+    {
+      "key": "t1_add_cola_can_id",
+      "value": "b8a63f67-cda7-30b7-1a00-565d8a2c4979"
+    },
+
+    {
+      "key": "t1_order_0",
+      "value": "0ea3a6b8-c368-4f10-3298-f32f10b52ec0"
+    },
+    {
+      "key": "t1_order_1",
+      "value": "601d6ca9-597f-c487-f8c8-a05dfc510ab5"
+    },
+    {
+      "key": "t1_order_2",
+      "value": "f3ba5a82-9a53-c42c-905a-b5e6645e800f"
+    },
+
+    {
+      "key": "t2_mat_pizza_dough_id",
+      "value": "a516ae88-7c7b-9cec-a747-ef9668399f8a"
+    },
+    {
+      "key": "t2_combo_margherita_id",
+      "value": "f30186e9-2a75-86f0-f4d0-e6cbd09fcd1b"
+    },
+    {
+      "key": "t2_add_garlic_dip_id",
+      "value": "c8e80d86-7454-8b9e-4996-d674578fec15"
+    },
+
+    {
+      "key": "t3_mat_pita_bread_id",
+      "value": "70fdd806-4d25-ba85-6d1f-2ba07310a1c2"
+    }
+  ],
+  "item": [
+    {
+      "name": "Material",
+      "item": [
+        {
+          "name": "GET Materials (paged)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material?orderBy=CreatedDate&orderByDirection=DESC&pageNumber=1&pageSize=10",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material" ],
+              "query": [
+                {
+                  "key": "orderBy",
+                  "value": "CreatedDate"
+                },
+                {
+                  "key": "orderByDirection",
+                  "value": "DESC"
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Material by Id (seed: Beef Patty)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material/{{t1_mat_beef_patty_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material", "{{t1_mat_beef_patty_id}}" ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Material (OK)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameEn\": \"Avocado Slices\",\n  \"nameAr\": \"شرائح أفوكادو\",\n  \"unit\": 1,\n  \"pricePerUnit\": 0.020,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/avocado-slices\",\n  \"isActive\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Material (ERROR: bad enum)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameEn\": \"Broken Unit Example\",\n  \"nameAr\": \"وحدة خاطئة\",\n  \"unit\": \"UnknownUnit\",\n  \"pricePerUnit\": 0.010,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/broken-unit-example\",\n  \"isActive\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Material (OK: Cheddar → new price)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material/{{t1_mat_cheddar_slice_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material", "{{t1_mat_cheddar_slice_id}}" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{t1_mat_cheddar_slice_id}}\",\n  \"nameEn\": \"Cheddar Slice\",\n  \"nameAr\": \"شريحة شيدر\",\n  \"unit\": 0,\n  \"pricePerUnit\": 0.320,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/cheddar-slice\",\n  \"isActive\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Material (ERROR: negative price)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Material/{{t1_mat_brioche_bun_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Material", "{{t1_mat_brioche_bun_id}}" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{t1_mat_brioche_bun_id}}\",\n  \"nameEn\": \"Brioche Bun\",\n  \"nameAr\": \"خبز بريوش\",\n  \"unit\": 0,\n  \"pricePerUnit\": -0.100,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/material/brioche-bun\",\n  \"isActive\": true\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Combo",
+      "item": [
+        {
+          "name": "GET Combos (paged)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Combo?orderBy=CreatedDate&orderByDirection=DESC&pageNumber=1&pageSize=10",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Combo" ],
+              "query": [
+                {
+                  "key": "orderBy",
+                  "value": "CreatedDate"
+                },
+                {
+                  "key": "orderByDirection",
+                  "value": "DESC"
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Combo by Id (seed: Classic Burger Meal)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Combo", "{{t1_combo_classic_id}}" ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Combo (OK)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Combo",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Combo" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameEn\": \"Spicy Burger Meal\",\n  \"nameAr\": \"وجبة برجر حارة\",\n  \"price\": 5.900,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/combo/spicy-burger-meal\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{t1_mat_brioche_bun_id}}\",   \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_beef_patty_id}}\",    \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_cheddar_slice_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_jalapenos_id}}\",     \"quantity\": 20 },\n    { \"materialId\": \"{{t1_mat_lettuce_id}}\",       \"quantity\": 25 },\n    { \"materialId\": \"{{t1_mat_tomato_id}}\",        \"quantity\": 30 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\",         \"quantity\": 120 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Combo (ERROR: materialId from different tenant)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Combo",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Combo" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameEn\": \"Cross-Tenant Test\",\n  \"nameAr\": \"اختبار عبر المستأجر\",\n  \"price\": 4.500,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/1/combo/cross-tenant-test\",\n  \"isActive\": true,\n  \"material\": [\n    { \"materialId\": \"{{t2_mat_pizza_dough_id}}\", \"quantity\": 1 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "Combo Materials",
+          "item": [
+            {
+              "name": "POST Add Material to Combo (OK)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "{{tenantId}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}?quantity=15",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "15"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "POST Add Material to Combo (ERROR: different tenant material)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t2_mat_pizza_dough_id}}?quantity=1",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t2_mat_pizza_dough_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "PUT Update Material Quantity (ERROR: non-positive)",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "{{tenantId}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}?quantity=0",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "0"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "DELETE Remove Material from Combo (OK)",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "{{tenantId}}"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Combo/{{t1_combo_classic_id}}/Material/{{t1_mat_mushrooms_id}}",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Combo", "{{t1_combo_classic_id}}", "Material", "{{t1_mat_mushrooms_id}}" ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "GET Orders (paged)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order?orderBy=OrderDate&orderByDirection=DESC&pageNumber=1&pageSize=10",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order" ],
+              "query": [
+                {
+                  "key": "orderBy",
+                  "value": "OrderDate"
+                },
+                {
+                  "key": "orderByDirection",
+                  "value": "DESC"
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Order by Id (seed: order 0)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order", "{{t1_order_0}}" ]
+            }
+          }
+        },
+        {
+          "name": "POST Create Order (OK)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"Yousef Q.\",\n  \"customerPhone\": \"0790000010\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 150 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 2 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Order (ERROR: combo from different tenant)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"Cross Combo\",\n  \"customerPhone\": \"0790000011\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t2_combo_margherita_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 1 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Order (ERROR: material from different tenant)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"Cross Material\",\n  \"customerPhone\": \"0790000012\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t2_mat_pizza_dough_id}}\", \"quantity\": 1 },\n    { \"additionalMaterialId\": \"{{t1_add_ketchup_id}}\", \"quantity\": 1 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "POST Create Order (ERROR: additionalMaterial from different tenant)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"Cross Additional\",\n  \"customerPhone\": \"0790000013\",\n  \"orderItem\": [\n    { \"comboId\": \"{{t1_combo_classic_id}}\", \"quantity\": 1 },\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": 120 },\n    { \"additionalMaterialId\": \"{{t2_add_garlic_dip_id}}\", \"quantity\": 1 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Order (ERROR: negative quantity)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order/{{t1_order_1}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order", "{{t1_order_1}}" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{t1_order_1}}\",\n  \"customerName\": \"Sara Hussein\",\n  \"customerPhone\": \"0790000002\",\n  \"orderItem\": [\n    { \"materialId\": \"{{t1_mat_fries_id}}\", \"quantity\": -5 }\n  ]\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update Order (empty items – expect validation if enforced)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "1"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/Order/{{t1_order_2}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "Order", "{{t1_order_2}}" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{t1_order_2}}\",\n  \"customerName\": \"Omar Nasser\",\n  \"customerPhone\": \"0790000003\",\n  \"orderItem\": []\n}"
+            }
+          }
+        },
+        {
+          "name": "Order Items",
+          "item": [
+            {
+              "name": "POST Add Material to Order (OK)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Material/{{t1_mat_bacon_bits_id}}?quantity=10",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Material", "{{t1_mat_bacon_bits_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "10"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "POST Add Material to Order (ERROR: different tenant)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Material/{{t3_mat_pita_bread_id}}?quantity=1",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Material", "{{t3_mat_pita_bread_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "POST Add Combo to Order (ERROR: different tenant)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Combo/{{t2_combo_margherita_id}}?quantity=1",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Combo", "{{t2_combo_margherita_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "POST Add Additional to Order (ERROR: different tenant)",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/Additional/{{t2_add_garlic_dip_id}}?quantity=1",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "Additional", "{{t2_add_garlic_dip_id}}" ],
+                  "query": [
+                    {
+                      "key": "quantity",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "DELETE Remove Item by Reference (OK: remove Fries by MaterialId)",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "X-Accept-Language",
+                    "value": "{{lang}}"
+                  },
+                  {
+                    "key": "X-Tenant-Id",
+                    "value": "1"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/API/Order/{{t1_order_0}}/Item/OrderItem/{{t1_mat_fries_id}}",
+                  "protocol": "https",
+                  "host": [ "localhost" ],
+                  "port": "{{port}}",
+                  "path": [ "API", "Order", "{{t1_order_0}}", "Item", "OrderItem", "{{t1_mat_fries_id}}" ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AdditionalMaterial",
+      "item": [
+        {
+          "name": "GET Additional Materials (paged)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/AdditionalMaterial?orderBy=Name&orderByDirection=ASC&pageNumber=1&pageSize=10",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "AdditionalMaterial" ],
+              "query": [
+                {
+                  "key": "orderBy",
+                  "value": "Name"
+                },
+                {
+                  "key": "orderByDirection",
+                  "value": "ASC"
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET AdditionalMaterial by Id (seed: Ketchup Sachet)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{t1_add_ketchup_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "AdditionalMaterial", "{{t1_add_ketchup_id}}" ]
+            }
+          }
+        },
+        {
+          "name": "POST Create AdditionalMaterial (OK)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/AdditionalMaterial",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "AdditionalMaterial" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nameEn\": \"Spicy Mayo Cup\",\n  \"nameAr\": \"كوب مايونيز حار\",\n  \"unit\": 1,\n  \"pricePerUnit\": 0.008,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/additional-material/spicy-mayo-cup\",\n  \"isActive\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "PUT Update AdditionalMaterial (ERROR: negative price)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Accept-Language",
+                "value": "{{lang}}"
+              },
+              {
+                "key": "X-Tenant-Id",
+                "value": "{{tenantId}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/API/AdditionalMaterial/{{t1_add_bbq_sauce_id}}",
+              "protocol": "https",
+              "host": [ "localhost" ],
+              "port": "{{port}}",
+              "path": [ "API", "AdditionalMaterial", "{{t1_add_bbq_sauce_id}}" ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{t1_add_bbq_sauce_id}}\",\n  \"nameEn\": \"BBQ Sauce Cup\",\n  \"nameAr\": \"كوب باربكيو\",\n  \"unit\": 1,\n  \"pricePerUnit\": -0.005,\n  \"tax\": 0.160,\n  \"imageUrl\": \"https://www.ERestaurant.com/{{tenantId}}/additional-material/bbq-sauce-cup\",\n  \"isActive\": true\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
