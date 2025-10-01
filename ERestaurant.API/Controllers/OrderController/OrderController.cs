@@ -45,7 +45,7 @@ namespace ERestaurant.API.Controllers.OrderController
         public async Task<ActionResult<OrderDTO>> CreateAsync([FromBody] CreateOrderDTO newOrder)
         {
             var created = await _orderServices.CreateAsync(newOrder);
-            return CreatedAtAction(nameof(FindByIdAsync), new { id = created.Id }, created);
+            return Created();
         }
 
         [HttpPut("{id:guid}")]

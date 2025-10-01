@@ -16,7 +16,7 @@ namespace ERestaurant.Application.Services.OrderServices
 
         Task<OrderDTO?> FindByIdAsync(Guid id);
         Task<OrderDTO> CreateAsync(CreateOrderDTO dto);
-        Task<OrderDTO> UpdateAsync(UpdateOrderDTO dto);
+        Task<OrderDTO?> UpdateAsync(UpdateOrderDTO dto);
         Task DeleteAsync(Guid id);
 
     }

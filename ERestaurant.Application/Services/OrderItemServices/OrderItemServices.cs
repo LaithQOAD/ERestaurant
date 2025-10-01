@@ -26,8 +26,6 @@ namespace ERestaurant.Application.Services.OrderItemServices
             _orderPricingServices = orderPricingServices;
         }
 
-
-        #region Add
         public async Task<OrderDTO> AddMaterialAsync(Guid orderId, Guid materialId, int quantity)
         {
             EnsurePositive(quantity);
@@ -117,7 +115,6 @@ namespace ERestaurant.Application.Services.OrderItemServices
 
             return await SaveRecalculateAndReturnAsync(order);
         }
-        #endregion
 
         public async Task<OrderDTO> RemoveAsync(Guid orderId, Guid referenceId)
         {
@@ -167,7 +164,7 @@ namespace ERestaurant.Application.Services.OrderItemServices
             await _uow.Order.UpdateAsync(order);
             await _uow.SaveChangesAsync();
 
-            var withIncludes = await _uow.Order.FindByIdAsync(order.Id); // AsNoTracking OK للـقراءة
+            var withIncludes = await _uow.Order.FindByIdAsync(order.Id);
             return _mapper.Map<OrderDTO>(withIncludes, opt => opt.Items["isArabic"] = _language.IsArabic);
         }
 

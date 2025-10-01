@@ -7,6 +7,18 @@
   },
   "variable": [
     {
+      "key": "port",
+      "value": 7034
+    },
+    {
+      "key": "tenantId",
+      "value": 1
+    },
+    {
+      "key": "lang",
+      "value": "ar"
+    },
+    {
       "key": "T1_COMBO_CLASSIC_ID",
       "value": "416EC7AC-BE5B-8926-D7C5-8358AE9E1681"
     },

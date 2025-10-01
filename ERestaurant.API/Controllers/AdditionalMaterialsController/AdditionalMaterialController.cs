@@ -49,7 +49,7 @@ namespace ERestaurant.API.Controllers.AdditionalMaterialController
         public async Task<ActionResult<AdditionalMaterialDTO>> CreateAsync(CreateAdditionalMaterialDTO newAdditionalMaterialRequest)
         {
             var createdAdditionalMaterial = await _additionalMaterialServices.AddAsync(newAdditionalMaterialRequest);
-            return CreatedAtAction(nameof(FindByIdAsync), new { id = createdAdditionalMaterial.Id }, createdAdditionalMaterial);
+            return Created();
         }
 
 

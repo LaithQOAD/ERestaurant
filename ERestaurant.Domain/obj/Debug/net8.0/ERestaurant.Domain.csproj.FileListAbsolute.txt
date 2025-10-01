@@ -12,3 +12,18 @@ C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ref
 C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.pdb
 C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.genruntimeconfig.cache
 C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ref\ERestaurant.Domain.dll
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\bin\Debug\net8.0\ERestaurant.Domain.deps.json
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\bin\Debug\net8.0\ERestaurant.Domain.runtimeconfig.json
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\bin\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\bin\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.AssemblyReference.cache
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfoInputs.cache
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.AssemblyInfo.cs
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.csproj.CoreCompileInputs.cache
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.sourcelink.json
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\refint\ERestaurant.Domain.dll
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ERestaurant.Domain.genruntimeconfig.cache
+C:\Users\l.amro\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\Desktop\ERestaurantGIT\ERestaurant\ERestaurant.Domain\obj\Debug\net8.0\ref\ERestaurant.Domain.dll

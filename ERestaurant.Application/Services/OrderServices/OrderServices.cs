@@ -107,18 +107,25 @@ namespace ERestaurant.Application.Services.OrderServices
 
             return _mapper.Map<OrderDTO>(orderWithIncludes, opt => opt.Items["isArabic"] = _language.IsArabic);
         }
-
-        public async Task<OrderDTO> UpdateAsync(UpdateOrderDTO updatedOrder)
+        public async Task<OrderDTO?> UpdateAsync(UpdateOrderDTO updatedOrder)
         {
             var orderEntity = await _unitOfWork.Order.FindByIdAsync(updatedOrder.Id);
             if (orderEntity is null)
                 throw new KeyNotFoundException("Order not found");
 
+            if (updatedOrder.OrderItem is not null && updatedOrder.OrderItem.Count == 0)
+            {
+                await _unitOfWork.Order.DeleteAsync(updatedOrder.Id);
+                await _unitOfWork.SaveChangesAsync();
+                return null;
+            }
+
             orderEntity.CustomerName = updatedOrder.CustomerName;
             orderEntity.CustomerPhone = updatedOrder.CustomerPhone;
             orderEntity.OrderDate = DateTimeOffset.UtcNow;
 
-            if (updatedOrder.OrderItem is not null && updatedOrder.OrderItem.Count > 0)
+            // لو أُرسلت قائمة وفيها عناصر، نتحقق ونستبدل
+            if (updatedOrder.OrderItem is not null)
             {
                 ValidateItems(updatedOrder.OrderItem);
                 orderEntity.OrderItem.Clear();
@@ -126,14 +133,13 @@ namespace ERestaurant.Application.Services.OrderServices
             }
 
             await RecalculateAsync(orderEntity);
-
             await _unitOfWork.Order.UpdateAsync(orderEntity);
             await _unitOfWork.SaveChangesAsync();
 
             var orderWithIncludes = await _unitOfWork.Order.FindByIdAsync(orderEntity.Id);
-
             return _mapper.Map<OrderDTO>(orderWithIncludes, opt => opt.Items["isArabic"] = _language.IsArabic);
         }
+
 
         public async Task DeleteAsync(Guid id)
         {
