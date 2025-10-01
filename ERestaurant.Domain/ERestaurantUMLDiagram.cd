@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ERestaurant.Domain.Entity.AdditionalMaterial">
+    <Position X="18.25" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAAAgAAAAMCAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entity\AdditionalMaterial.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Unit" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.BaseEntity">
+    <Position X="19.75" Y="5.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AEACEAAAAAAAAAAAAAAAAAAAAAAAAAAACgAgAQIAAAE=</HashCode>
+      <FileName>Entity\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.Combo">
+    <Position X="20.25" Y="2.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAQAgAAAAECAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Entity\Combo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.ComboMaterial">
+    <Position X="15.5" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entity\ComboMaterial.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Combo" />
+      <Property Name="Material" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.Material">
+    <Position X="13.75" Y="9.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAAAgAAAAMCAAAAAAAAAAAAAAAAAIAAAEAAA=</HashCode>
+      <FileName>Entity\Material.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Unit" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.Order">
+    <Position X="24.25" Y="5.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAIEAAAAAAAQAAQAAAAgABAAgAAAAA=</HashCode>
+      <FileName>Entity\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERestaurant.Domain.Entity.OrderItem">
+    <Position X="23.25" Y="9.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>kEEAAAAAAAAgIAAACBQAAAAAAAAAAAgAAAAAgQAAAAA=</HashCode>
+      <FileName>Entity\OrderItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+      <Property Name="AdditionalMaterial" />
+      <Property Name="Material" />
+      <Property Name="Combo" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="ERestaurant.Domain.Enums.MaterialUnit">
+    <Position X="16" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Enums\MaterialUnit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

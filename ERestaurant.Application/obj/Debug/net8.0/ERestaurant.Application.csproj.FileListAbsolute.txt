@@ -1,0 +1,17 @@
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Application.deps.json
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Application.runtimeconfig.json
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Application.dll
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Application.pdb
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Domain.dll
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\bin\Debug\net8.0\ERestaurant.Domain.pdb
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.csproj.AssemblyReference.cache
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.AssemblyInfoInputs.cache
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.AssemblyInfo.cs
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.csproj.CoreCompileInputs.cache
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaur.2AFB4B62.Up2Date
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.dll
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\refint\ERestaurant.Application.dll
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.pdb
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ERestaurant.Application.genruntimeconfig.cache
+C:\Users\l.amro\source\repos\ERestaurant\ERestaurant.Application\obj\Debug\net8.0\ref\ERestaurant.Application.dll
