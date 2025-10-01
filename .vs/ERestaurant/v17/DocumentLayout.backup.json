@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|NewFolder1{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurantPostman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|NewFolder1{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|solutionrelative:ERestaurantPostman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.api\\middlewares\\tenantmiddleware\\tenantmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|solutionrelative:erestaurant.api\\middlewares\\tenantmiddleware\\tenantmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.application\\services\\materialservices\\materialservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|solutionrelative:erestaurant.application\\services\\materialservices\\materialservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\helperclass\\globalfilterdb\\modelbuilderglobalfilterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\helperclass\\globalfilterdb\\modelbuilderglobalfilterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\databasecontext\\erestaurantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\databasecontext\\erestaurantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|solutionrelative:erestaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\helperclass\\tenantisolationindexingdb\\tenantisolationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\helperclass\\tenantisolationindexingdb\\tenantisolationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\helperclass\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\helperclass\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.application\\services\\orderservices\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|solutionrelative:erestaurant.application\\services\\orderservices\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.application\\services\\orderservices\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|solutionrelative:erestaurant.application\\services\\orderservices\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.application\\services\\orderitemservices\\orderitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|solutionrelative:erestaurant.application\\services\\orderitemservices\\orderitemservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.application\\erestaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1CA3C15-C071-456F-B88A-3D6C1591799B}|ERestaurant.Application\\ERestaurant.Application.csproj|solutionrelative:erestaurant.application\\erestaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.api\\controllers\\ordercontroller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|solutionrelative:erestaurant.api\\controllers\\ordercontroller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.api\\controllers\\additionalmaterialscontroller\\additionalmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BCE1CA9-B2C4-4CDB-8FF2-1D76C56FD084}|ERestaurant.API\\ERestaurant.API.csproj|solutionrelative:erestaurant.api\\controllers\\additionalmaterialscontroller\\additionalmaterialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\migrations\\20251001105021_initialdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +63,8 @@
       "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\migrations\\erestaurantdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|c:\\users\\l.amro\\onedrive - al-manzumah al-muttahidah for it systems\\desktop\\erestaurantgit\\erestaurant\\erestaurant.infrastructure\\helperclass\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5DACD97-E917-48E7-B8EF-21B8B4DCDF66}|ERestaurant.Infrastructure\\ERestaurant.Infrastructure.csproj|solutionrelative:erestaurant.infrastructure\\helperclass\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|Postman Collection{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurantPostman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|Postman Collection{F715AF63-C2E7-4E0C-ABDC-4D90A7D2CE8E}|solutionrelative:ERestaurantPostman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +74,161 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TenantMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Middlewares\\TenantMiddleware\\TenantMiddleware.cs",
+              "RelativeDocumentMoniker": "ERestaurant.API\\Middlewares\\TenantMiddleware\\TenantMiddleware.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Middlewares\\TenantMiddleware\\TenantMiddleware.cs",
+              "RelativeToolTip": "ERestaurant.API\\Middlewares\\TenantMiddleware\\TenantMiddleware.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:35:43.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelBuilderGlobalFilterExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\GlobalFilterDB\\ModelBuilderGlobalFilterExtensions.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\HelperClass\\GlobalFilterDB\\ModelBuilderGlobalFilterExtensions.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\GlobalFilterDB\\ModelBuilderGlobalFilterExtensions.cs",
+              "RelativeToolTip": "ERestaurant.Infrastructure\\HelperClass\\GlobalFilterDB\\ModelBuilderGlobalFilterExtensions.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:32:21.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MaterialServices.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\MaterialServices\\MaterialServices.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Application\\Services\\MaterialServices\\MaterialServices.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\MaterialServices\\MaterialServices.cs",
+              "RelativeToolTip": "ERestaurant.Application\\Services\\MaterialServices\\MaterialServices.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAjwDsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:19:41.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Program.cs",
+              "RelativeDocumentMoniker": "ERestaurant.API\\Program.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Program.cs",
+              "RelativeToolTip": "ERestaurant.API\\Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:56:26.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ERestaurantDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\DatabaseContext\\ERestaurantDbContext.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\DatabaseContext\\ERestaurantDbContext.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\DatabaseContext\\ERestaurantDbContext.cs",
+              "RelativeToolTip": "ERestaurant.Infrastructure\\DatabaseContext\\ERestaurantDbContext.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAlwCgAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:19:01.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TenantIsolationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\TenantIsolationIndexingDB\\TenantIsolationDbContext.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\HelperClass\\TenantIsolationIndexingDB\\TenantIsolationDbContext.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\TenantIsolationIndexingDB\\TenantIsolationDbContext.cs",
+              "RelativeToolTip": "ERestaurant.Infrastructure\\HelperClass\\TenantIsolationIndexingDB\\TenantIsolationDbContext.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:32:40.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderServices\\IOrderServices.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Application\\Services\\OrderServices\\IOrderServices.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderServices\\IOrderServices.cs",
+              "RelativeToolTip": "ERestaurant.Application\\Services\\OrderServices\\IOrderServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:44:56.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderServices\\OrderServices.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Application\\Services\\OrderServices\\OrderServices.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderServices\\OrderServices.cs",
+              "RelativeToolTip": "ERestaurant.Application\\Services\\OrderServices\\OrderServices.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAkwHoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:41:21.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderItemServices.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderItemServices\\OrderItemServices.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Application\\Services\\OrderItemServices\\OrderItemServices.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\Services\\OrderItemServices\\OrderItemServices.cs",
+              "RelativeToolTip": "ERestaurant.Application\\Services\\OrderItemServices\\OrderItemServices.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAADwv6YAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:40:53.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ERestaurant.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\ERestaurant.Application.csproj",
+              "RelativeDocumentMoniker": "ERestaurant.Application\\ERestaurant.Application.csproj",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Application\\ERestaurant.Application.csproj",
+              "RelativeToolTip": "ERestaurant.Application\\ERestaurant.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-01T13:40:48.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdditionalMaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Controllers\\AdditionalMaterialsController\\AdditionalMaterialController.cs",
+              "RelativeDocumentMoniker": "ERestaurant.API\\Controllers\\AdditionalMaterialsController\\AdditionalMaterialController.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Controllers\\AdditionalMaterialsController\\AdditionalMaterialController.cs",
+              "RelativeToolTip": "ERestaurant.API\\Controllers\\AdditionalMaterialsController\\AdditionalMaterialController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:35:48.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Controllers\\OrderController\\OrderController.cs",
+              "RelativeDocumentMoniker": "ERestaurant.API\\Controllers\\OrderController\\OrderController.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.API\\Controllers\\OrderController\\OrderController.cs",
+              "RelativeToolTip": "ERestaurant.API\\Controllers\\OrderController\\OrderController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwC4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:32:35.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "20251001105021_InitialDataBase.cs",
               "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\Migrations\\20251001105021_InitialDataBase.cs",
               "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\Migrations\\20251001105021_InitialDataBase.cs",
@@ -42,12 +236,23 @@
               "RelativeToolTip": "ERestaurant.Infrastructure\\Migrations\\20251001105021_InitialDataBase.cs",
               "ViewState": "AgIAAP0BAAAAAAAAAAAkwAUCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T13:02:11.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T13:02:11.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
+              "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
+              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
+              "RelativeToolTip": "ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
+              "ViewState": "AgIAALoBAAAAAAAAAAAowAsCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T13:01:32.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ERestaurantDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\Migrations\\ERestaurantDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\Migrations\\ERestaurantDbContextModelSnapshot.cs",
@@ -55,34 +260,19 @@
               "RelativeToolTip": "ERestaurant.Infrastructure\\Migrations\\ERestaurantDbContextModelSnapshot.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T13:02:09.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T13:02:09.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
-              "RelativeDocumentMoniker": "ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
-              "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
-              "RelativeToolTip": "ERestaurant.Infrastructure\\HelperClass\\SeedData\\SeedData.cs",
-              "ViewState": "AgIAAAsCAAAAAAAAAAAowBgCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T13:01:32.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "ERestaurantPostman.json",
               "DocumentMoniker": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurantPostman.json",
               "RelativeDocumentMoniker": "ERestaurantPostman.json",
               "ToolTip": "C:\\Users\\l.amro\\OneDrive - Al-Manzumah Al-Muttahidah For IT Systems\\Desktop\\ERestaurantGIT\\ERestaurant\\ERestaurantPostman.json",
               "RelativeToolTip": "ERestaurantPostman.json",
-              "ViewState": "AgIAADQEAAAAAAAAAAAUwFYEAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-01T12:57:01.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T12:57:01.383Z"
             }
           ]
         }

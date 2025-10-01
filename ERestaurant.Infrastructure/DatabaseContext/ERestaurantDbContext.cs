@@ -38,6 +38,8 @@ namespace ERestaurant.Infrastructure.DatabaseContext
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.ApplyGlobalFilter<BaseEntity>(e => e.TenantId == _requestTenant.TenantId && !e.IsDeleted);
+
             AutoIncludeDbContext.Apply(modelBuilder);
             
             TenantIsolationDbContext.Apply(modelBuilder);

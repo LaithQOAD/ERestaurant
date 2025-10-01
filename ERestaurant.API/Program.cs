@@ -19,7 +19,6 @@ using ERestaurant.Infrastructure.HelperClass.DatabaseRecreation;
 using ERestaurant.Infrastructure.Repositories;
 using ERestaurant.Infrastructure.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -82,6 +81,9 @@ var app = builder.Build();
 
 await app.UseDevDatabaseRecreateAsync();
 
+app.UseMiddleware<TenantMiddleware>();
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -91,8 +93,6 @@ if (app.Environment.IsDevelopment())
 
 #region User Defined Scope
 app.UseAppProblemDetails();
-
-app.UseMiddleware<TenantMiddleware>();
 
 app.UseHeaderLocalization();
 #endregion

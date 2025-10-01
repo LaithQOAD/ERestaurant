@@ -13,6 +13,15 @@ namespace ERestaurant.API.Middlewares.TenantMiddleware
         }
         public async Task Invoke(HttpContext context)
         {
+            var path = context.Request.Path.Value ?? "";
+            if (path.StartsWith("/swagger", StringComparison.OrdinalIgnoreCase) ||
+                path.Equals("/", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(context.Request.Method, "OPTIONS", StringComparison.OrdinalIgnoreCase))
+            {
+                await _next(context);
+                return;
+            }
+
             var requestContext = context.RequestServices
                 .GetRequiredService<IRequestTenant>() as RequestTenant;
 
@@ -24,7 +33,7 @@ namespace ERestaurant.API.Middlewares.TenantMiddleware
                 return;
             }
 
-            requestContext!.TenantId = tenantId;
+            requestContext.TenantId = tenantId;
             await _next(context);
         }
 
