@@ -1,7 +1,3 @@
-تمام — شلت الأقسام اللي طلبت حذفها. هذا **README المُحدَّث** (جاهز كبديل مباشر):
-
----
-
 # E-Restaurant Web API
 
 A multi-tenant restaurant backend for menus, combos, orders, and add-ons — with built-in localization (Arabic/English), clean error handling, and a developer-friendly architecture (.NET + EF Core).
