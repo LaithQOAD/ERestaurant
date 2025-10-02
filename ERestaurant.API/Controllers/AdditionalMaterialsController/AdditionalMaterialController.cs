@@ -1,5 +1,6 @@
-﻿using ERestaurant.Application.DTOs.AdditionalMaterialDTOs;
-using ERestaurant.Application.Services.AdditionalMaterialServices;
+﻿using ERestaurant.Application.AdditionalMaterials.AdditionalMaterialDTOs;
+using ERestaurant.Application.AdditionalMaterials.AdditionalMaterialServices;
+using ERestaurant.Application.AdditionalMaterials.DTOs;
 using ERestaurant.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,28 +10,18 @@ namespace ERestaurant.API.Controllers.AdditionalMaterialController
     [Route("API/AdditionalMaterial")]
     public sealed class AdditionalMaterialController : ControllerBase
     {
-        private readonly IAdditionalMaterialServices _additionalMaterialServices;
+        private readonly IAdditionalMaterialService _additionalMaterialService;
 
-        public AdditionalMaterialController(IAdditionalMaterialServices additionalMaterialServices)
+        public AdditionalMaterialController(IAdditionalMaterialService additionalMaterialService)
         {
-            _additionalMaterialServices = additionalMaterialServices;
+            _additionalMaterialService = additionalMaterialService;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<AdditionalMaterialDTO>>> FindAllAsync(
-            string? searchQuery,
-            MaterialUnit? unit,
-            bool? isActive,
-            decimal? priceFrom,
-            decimal? priceTo,
-            string? orderBy = "Name",
-            string? orderByDirection = "ASC",
-            int? pageNumber = 1,
-            int? pageSize = 10)
+            [FromQuery] FindAllAdditionalMaterialParameterDTO findAllAdditionalMaterialParameterDTO)
         {
-            var result = await _additionalMaterialServices.FindAllAsync(
-                searchQuery, unit, isActive, priceFrom, priceTo,
-                orderBy, orderByDirection, pageNumber, pageSize);
+            var result = await _additionalMaterialService.FindAllAsync(findAllAdditionalMaterialParameterDTO);
 
             return Ok(result);
         }
@@ -38,7 +29,7 @@ namespace ERestaurant.API.Controllers.AdditionalMaterialController
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<AdditionalMaterialDTO>> FindByIdAsync(Guid id)
         {
-            var additionalMaterialEntity = await _additionalMaterialServices.FindByIdAsync(id);
+            var additionalMaterialEntity = await _additionalMaterialService.FindByIdAsync(id);
             if (additionalMaterialEntity is null) return NotFound();
 
             return Ok(additionalMaterialEntity);
@@ -48,7 +39,7 @@ namespace ERestaurant.API.Controllers.AdditionalMaterialController
         [HttpPost]
         public async Task<ActionResult<AdditionalMaterialDTO>> CreateAsync(CreateAdditionalMaterialDTO newAdditionalMaterialRequest)
         {
-            var createdAdditionalMaterial = await _additionalMaterialServices.AddAsync(newAdditionalMaterialRequest);
+            var createdAdditionalMaterial = await _additionalMaterialService.AddAsync(newAdditionalMaterialRequest);
             return Created();
         }
 
@@ -59,14 +50,14 @@ namespace ERestaurant.API.Controllers.AdditionalMaterialController
             if (id != updateAdditionalMaterialRequest.Id)
                 return BadRequest("Route id and body id must match.");
 
-            var updatedAdditionalMaterial = await _additionalMaterialServices.UpdateAsync(updateAdditionalMaterialRequest);
+            var updatedAdditionalMaterial = await _additionalMaterialService.UpdateAsync(updateAdditionalMaterialRequest);
             return Ok(updatedAdditionalMaterial);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
-            await _additionalMaterialServices.DeleteAsync(id);
+            await _additionalMaterialService.DeleteAsync(id);
             return NoContent();
         }
     }

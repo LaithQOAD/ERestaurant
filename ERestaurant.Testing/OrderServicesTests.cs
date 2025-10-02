@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
-using ERestaurant.Application.DTOs.AdditionalMaterialDTOs;
+using ERestaurant.Application.AdditionalMaterials.AdditionalMaterialDTOs;
 using ERestaurant.Application.DTOs.ComboDTOs;
-using ERestaurant.Application.DTOs.MaterialDTOs;
 using ERestaurant.Application.DTOs.OrderDTOs;
-using ERestaurant.Application.DTOs.OrderItemDTOs;
-using ERestaurant.Application.Services.OrderServices;
+using ERestaurant.Application.Materials.DTOs;
+using ERestaurant.Application.OrderItems.DTOs;
+using ERestaurant.Application.Orders.DTOs;
+using ERestaurant.Application.Orders.OrderServices;
 using ERestaurant.Domain.Entity;
 using ERestaurant.Domain.IUnitOfWork;
 using ERestaurant.Domain.Repository.BaseRepository;
@@ -17,7 +18,7 @@ namespace ERestaurant.Testing
 {
     public sealed class OrderServicesTests
     {
-        private static (OrderServices svc, TestUow uow) CreateSystem()
+        private static (OrderService svc, TestUow uow) CreateSystem()
         {
             var dbOptions = new DbContextOptionsBuilder<ERestaurantDbContext>()
                 .UseInMemoryDatabase($"orders-db-{Guid.NewGuid()}")
@@ -40,7 +41,7 @@ namespace ERestaurant.Testing
 
             var lang = new MockRequestLanguage();
 
-            var svc = new OrderServices(uow, mapper, lang);
+            var svc = new OrderService(uow, mapper, lang);
             return (svc, uow);
         }
         private static (Material m, Combo c, AdditionalMaterial a) SeedCatalog(TestUow uow)

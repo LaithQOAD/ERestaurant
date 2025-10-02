@@ -33,7 +33,7 @@
             }
           },
           {
-            "name": "priceFrom",
+            "name": "minPrice",
             "in": "query",
             "schema": {
               "type": "number",
@@ -41,7 +41,7 @@
             }
           },
           {
-            "name": "priceTo",
+            "name": "maxPrice",
             "in": "query",
             "schema": {
               "type": "number",
@@ -52,16 +52,14 @@
             "name": "orderBy",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "Name"
+              "type": "string"
             }
           },
           {
             "name": "orderByDirection",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "ASC"
+              "type": "string"
             }
           },
           {
@@ -69,8 +67,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 1
+              "format": "int32"
             }
           },
           {
@@ -78,8 +75,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 10
+              "format": "int32"
             }
           }
         ],
@@ -327,16 +323,14 @@
             "name": "orderBy",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "CreatedDate"
+              "type": "string"
             }
           },
           {
             "name": "orderByDirection",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "DESC"
+              "type": "string"
             }
           },
           {
@@ -344,8 +338,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 1
+              "format": "int32"
             }
           },
           {
@@ -353,8 +346,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 10
+              "format": "int32"
             }
           }
         ],
@@ -484,16 +476,14 @@
             "name": "orderBy",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "CreatedDate"
+              "type": "string"
             }
           },
           {
             "name": "orderByDirection",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "DESC"
+              "type": "string"
             }
           },
           {
@@ -501,8 +491,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 1
+              "format": "int32"
             }
           },
           {
@@ -510,8 +499,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 10
+              "format": "int32"
             }
           }
         ],
@@ -1116,16 +1104,14 @@
             "name": "orderBy",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "OrderDate"
+              "type": "string"
             }
           },
           {
             "name": "orderByDirection",
             "in": "query",
             "schema": {
-              "type": "string",
-              "default": "DESC"
+              "type": "string"
             }
           },
           {
@@ -1133,8 +1119,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 1
+              "format": "int32"
             }
           },
           {
@@ -1142,8 +1127,7 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 10
+              "format": "int32"
             }
           }
         ],

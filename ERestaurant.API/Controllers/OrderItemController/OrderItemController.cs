@@ -1,5 +1,5 @@
-﻿using ERestaurant.Application.DTOs.OrderDTOs;
-using ERestaurant.Application.Services.OrderItemServices;
+﻿using ERestaurant.Application.OrderItems.OrderItemServices;
+using ERestaurant.Application.Orders.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERestaurant.API.Controllers

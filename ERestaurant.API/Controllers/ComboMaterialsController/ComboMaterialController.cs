@@ -1,5 +1,5 @@
-﻿using ERestaurant.Application.DTOs.ComboDTOs;
-using ERestaurant.Application.Services.ComboMaterialServices;
+﻿using ERestaurant.Application.ComboMaterials.ComboMaterialServices;
+using ERestaurant.Application.DTOs.ComboDTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERestaurant.API.Controllers.ComboMaterialController
@@ -8,11 +8,11 @@ namespace ERestaurant.API.Controllers.ComboMaterialController
     [Route("API/Combo/{comboId:guid}/Material")]
     public sealed class ComboMaterialController : ControllerBase
     {
-        private readonly IComboMaterialServices _comboMaterialServices;
+        private readonly IComboMaterialService _comboMaterialService;
 
-        public ComboMaterialController(IComboMaterialServices comboMaterialServices)
+        public ComboMaterialController(IComboMaterialService comboMaterialService)
         {
-            _comboMaterialServices = comboMaterialServices;
+            _comboMaterialService = comboMaterialService;
         }
 
         [HttpPost("{materialId:guid}")]
@@ -21,7 +21,7 @@ namespace ERestaurant.API.Controllers.ComboMaterialController
             Guid materialId,
             [FromQuery] int quantity = 1)
         {
-            var updatedCombo = await _comboMaterialServices.AddMaterialAsync(comboId, materialId, quantity);
+            var updatedCombo = await _comboMaterialService.AddMaterialAsync(comboId, materialId, quantity);
             return Ok(updatedCombo);
         }
 
@@ -32,7 +32,7 @@ namespace ERestaurant.API.Controllers.ComboMaterialController
             Guid materialId,
             [FromQuery] int quantity)
         {
-            var updatedCombo = await _comboMaterialServices.UpdateQuantityAsync(comboId, materialId, quantity);
+            var updatedCombo = await _comboMaterialService.UpdateQuantityAsync(comboId, materialId, quantity);
             return Ok(updatedCombo);
         }
 
@@ -41,7 +41,7 @@ namespace ERestaurant.API.Controllers.ComboMaterialController
             Guid comboId,
             Guid materialId)
         {
-            var updatedCombo = await _comboMaterialServices.RemoveMaterialAsync(comboId, materialId);
+            var updatedCombo = await _comboMaterialService.RemoveMaterialAsync(comboId, materialId);
             return Ok(updatedCombo);
         }
     }

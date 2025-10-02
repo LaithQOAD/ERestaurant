@@ -1,4 +1,4 @@
-﻿using ERestaurant.Application.Services.Middleware.Interfaces;
+﻿using ERestaurant.Application.Services.MiddlewareInterfaces;
 namespace ERestaurant.API.Middlewares.TenantMiddleware
 {
     public class RequestTenant : IRequestTenant

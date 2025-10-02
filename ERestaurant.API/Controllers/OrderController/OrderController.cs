@@ -1,5 +1,5 @@
-﻿using ERestaurant.Application.DTOs.OrderDTOs;
-using ERestaurant.Application.Services.OrderServices;
+﻿using ERestaurant.Application.Orders.DTOs;
+using ERestaurant.Application.Orders.OrderServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERestaurant.API.Controllers.OrderController
@@ -8,27 +8,17 @@ namespace ERestaurant.API.Controllers.OrderController
     [Route("API/Order")]
     public sealed class OrderController : ControllerBase
     {
-        private readonly IOrderServices _orderServices;
+        private readonly IOrderService _orderServices;
 
-        public OrderController(IOrderServices orders)
+        public OrderController(IOrderService orders)
         {
             _orderServices = orders;
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<OrderDTO>>> FindAllAsync(
-            [FromQuery] string? searchQuery,
-            [FromQuery] DateTimeOffset? dateFrom,
-            [FromQuery] DateTimeOffset? dateTo,
-            [FromQuery] bool? isActive,
-            [FromQuery] string? orderBy = "OrderDate",
-            [FromQuery] string? orderByDirection = "DESC",
-            [FromQuery] int? pageNumber = 1,
-            [FromQuery] int? pageSize = 10)
+        public async Task<ActionResult<List<OrderDTO>>> FindAllAsync([FromQuery] FindAllOrderParameterDTO findAllOrderParameterDTO)
         {
-            var result = await _orderServices.FindAllAsync(
-                searchQuery, dateFrom, dateTo, isActive,
-                orderBy, orderByDirection, pageNumber, pageSize);
+            var result = await _orderServices.FindAllAsync(findAllOrderParameterDTO);
 
             return Ok(result);
         }

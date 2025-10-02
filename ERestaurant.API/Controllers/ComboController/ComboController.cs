@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ERestaurant.Application.Combos.ComboServices;
+using ERestaurant.Application.Combos.DTOs;
 using ERestaurant.Application.DTOs.ComboDTOs;
-using ERestaurant.Application.Services.ComboServices;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ERestaurant.API.Controllers
 {
@@ -8,48 +9,28 @@ namespace ERestaurant.API.Controllers
     [Route("API/Combo")]
     public sealed class ComboController : ControllerBase
     {
-        private readonly IComboServices _comboServices;
+        private readonly IComboService _comboService;
 
-        public ComboController(IComboServices comboServices)
+        public ComboController(IComboService comboService)
         {
-            _comboServices = comboServices;
+            _comboService = comboService;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<ComboDTO>>> FindAllAsync(
-            string? searchComboNameQuery,
-            string? filterComboNameQuery,
-            bool? isActive,
-            decimal? minPrice,
-            decimal? maxPrice,
-            string? orderBy = "CreatedDate",
-            string? orderByDirection = "DESC",
-            int? pageNumber = 1,
-            int? pageSize = 10)
+            [FromQuery] FindAllComboParameterDTO findAllParameter)
         {
-            var listOfCombos = await _comboServices.FindAllAsync(
-                searchComboNameQuery, filterComboNameQuery, isActive,
-                minPrice, maxPrice, orderBy, orderByDirection,
-                pageNumber, pageSize);
+            var listOfCombos = await _comboService.FindAllAsync(findAllParameter);
 
             return Ok(listOfCombos);
         }
 
         [HttpGet("WithAddition")]
         public async Task<ActionResult<ComboWithAdditionalMaterialDTO>> FindAllWithAdditionsAsync(
-            string? searchComboNameQuery,
-            string? filterComboNameQuery,
-            bool? isActive,
-            decimal? minPrice,
-            decimal? maxPrice,
-            string? orderBy = "CreatedDate",
-            string? orderByDirection = "DESC",
-            int? pageNumber = 1,
-            int? pageSize = 10)
+            [FromQuery] FindAllComboParameterDTO findAllParameter)
         {
-            var listOfCombosWithAdditions = await _comboServices.FindAllWithAdditionsAsync(
-                searchComboNameQuery, filterComboNameQuery, isActive,
-                minPrice, maxPrice, orderBy, orderByDirection, pageNumber, pageSize);
+            var listOfCombosWithAdditions =
+                await _comboService.FindAllWithAdditionsAsync(findAllParameter);
 
             return Ok(listOfCombosWithAdditions);
         }
@@ -58,7 +39,7 @@ namespace ERestaurant.API.Controllers
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<ComboDTO>> FindByIdAsync(Guid id)
         {
-            var comboResult = await _comboServices.FindByIdAsync(id);
+            var comboResult = await _comboService.FindByIdAsync(id);
 
             return Ok(comboResult);
         }
@@ -66,21 +47,21 @@ namespace ERestaurant.API.Controllers
         [HttpPost]
         public async Task<ActionResult<ComboDTO>> CreateAsync(CreateComboDTO newComboRequest)
         {
-            await _comboServices.CreateAsync(newComboRequest);
+            await _comboService.CreateAsync(newComboRequest);
             return Created();
         }
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<ComboDTO>> UpdateAsync(Guid id, UpdateComboDTO updatedComboRequest)
         {
-            var updatedCombo = await _comboServices.UpdateAsync(updatedComboRequest);
+            var updatedCombo = await _comboService.UpdateAsync(updatedComboRequest);
             return Ok(updatedCombo);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
-            await _comboServices.DeleteAsync(id);
+            await _comboService.DeleteAsync(id);
             return NoContent();
         }
     }

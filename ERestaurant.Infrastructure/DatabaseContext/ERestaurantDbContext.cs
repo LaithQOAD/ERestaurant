@@ -1,4 +1,4 @@
-﻿using ERestaurant.Application.Services.Middleware.Interfaces;
+﻿using ERestaurant.Application.Services.MiddlewareInterfaces;
 using ERestaurant.Domain.Entity;
 using ERestaurant.Infrastructure.HelperClass.Auditing;
 using ERestaurant.Infrastructure.HelperClass.AutoIncludeDB;

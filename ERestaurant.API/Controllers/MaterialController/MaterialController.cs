@@ -1,5 +1,5 @@
-﻿using ERestaurant.Application.DTOs.MaterialDTOs;
-using ERestaurant.Application.Services.MaterialServices;
+﻿using ERestaurant.Application.Materials.DTOs;
+using ERestaurant.Application.Materials.MaterialServices;
 using ERestaurant.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,27 +9,18 @@ namespace ERestaurant.API.Controllers.MaterialController
     [Route("API/Material")]
     public sealed class MaterialController : ControllerBase
     {
-        private readonly IMaterialServices _materialServices;
+        private readonly IMaterialService _materialService;
 
-        public MaterialController(IMaterialServices materialServices)
+        public MaterialController(IMaterialService materialService)
         {
-            _materialServices = materialServices;
+            _materialService = materialService;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<MaterialDTO>>> FindAllAsync(
-            string? searchNameQuery,
-            bool? isActive,
-            MaterialUnit? unit,
-            string? orderBy = "CreatedDate",
-            string? orderByDirection = "DESC",
-            int? pageNumber = 1,
-            int? pageSize = 10)
+            FindAllMaterialParameterDTO findAllMaterialParameterDTO)
         {
-            var items = await _materialServices.FindAllAsync(
-                searchNameQuery, isActive, unit,
-                orderBy, orderByDirection,
-                pageNumber, pageSize);
+            var items = await _materialService.FindAllAsync(findAllMaterialParameterDTO);
 
             return Ok(items);
         }
@@ -37,7 +28,7 @@ namespace ERestaurant.API.Controllers.MaterialController
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<MaterialDTO>> FindByIdAsync(Guid id)
         {
-            var materialResult = await _materialServices.FindByIdAsync(id);
+            var materialResult = await _materialService.FindByIdAsync(id);
             if (materialResult is null)
                 return NotFound("Details: material not found");
 
@@ -47,7 +38,7 @@ namespace ERestaurant.API.Controllers.MaterialController
         [HttpPost]
         public async Task<ActionResult<MaterialDTO>> CreateAsync(CreateMaterialDTO newMaterialRequest)
         {
-            var createdMaterial = await _materialServices.CreateAsync(newMaterialRequest);
+            var createdMaterial = await _materialService.CreateAsync(newMaterialRequest);
             return Created();
         }
 
@@ -57,14 +48,14 @@ namespace ERestaurant.API.Controllers.MaterialController
             if (id != updatedMaterialRequest.Id)
                 return BadRequest("Details: route id != body id");
 
-            var updatedMaterial = await _materialServices.UpdateAsync(updatedMaterialRequest);
+            var updatedMaterial = await _materialService.UpdateAsync(updatedMaterialRequest);
             return Ok(updatedMaterial);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            await _materialServices.DeleteAsync(id);
+            await _materialService.DeleteAsync(id);
             return NoContent();
         }
     }

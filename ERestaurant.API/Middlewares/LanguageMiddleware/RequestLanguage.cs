@@ -1,4 +1,4 @@
-﻿using ERestaurant.Application.Services.Middleware.Interfaces;
+﻿using ERestaurant.Application.Services.MiddlewareInterfaces;
 using System.Globalization;
 
 namespace ERestaurant.API.Middlewares.LanguageMiddleware

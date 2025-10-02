@@ -2,15 +2,19 @@ using ERestaurant.API.Middlewares.GlobalExceptionMiddleware;
 using ERestaurant.API.Middlewares.LanguageMiddleware;
 using ERestaurant.API.Middlewares.SwaggerService;
 using ERestaurant.API.Middlewares.TenantMiddleware;
-using ERestaurant.Application.Services.AdditionalMaterialServices;
-using ERestaurant.Application.Services.AutoMapperProfiles;
-using ERestaurant.Application.Services.ComboMaterialServices;
-using ERestaurant.Application.Services.ComboServices;
+using ERestaurant.Application.AdditionalMaterials.AdditionalMaterialServices;
+using ERestaurant.Application.ComboMaterials.AutoMapperProfiles;
+using ERestaurant.Application.ComboMaterials.ComboMaterialServices;
+using ERestaurant.Application.Combos.AutoMapperProfiles;
+using ERestaurant.Application.Combos.ComboServices;
+using ERestaurant.Application.Materials.AutoMapperProfiles;
+using ERestaurant.Application.Materials.MaterialServices;
+using ERestaurant.Application.OrderItems.AutoMapperProfiles;
+using ERestaurant.Application.OrderItems.OrderItemServices;
+using ERestaurant.Application.Orders.AutoMapperProfiles;
+using ERestaurant.Application.Orders.OrderServices;
 using ERestaurant.Application.Services.Localization;
-using ERestaurant.Application.Services.MaterialServices;
-using ERestaurant.Application.Services.Middleware.Interfaces;
-using ERestaurant.Application.Services.OrderItemServices;
-using ERestaurant.Application.Services.OrderServices;
+using ERestaurant.Application.Services.MiddlewareInterfaces;
 using ERestaurant.Domain.IUnitOfWork;
 using ERestaurant.Domain.Repository.BaseRepository;
 using ERestaurant.Infrastructure.DatabaseContext;
@@ -46,14 +50,14 @@ builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddScoped<IComboServices, ComboServices>();
-builder.Services.AddScoped<IMaterialServices, MaterialServices>();
-builder.Services.AddScoped<OrderServices>()
-        .AddScoped<IOrderServices>(sp => sp.GetRequiredService<OrderServices>())
-        .AddScoped<IOrderPricingServices>(sp => sp.GetRequiredService<OrderServices>());
+builder.Services.AddScoped<IComboService, ComboService>();
+builder.Services.AddScoped<IMaterialService, MaterialService>();
+builder.Services.AddScoped<OrderService>()
+        .AddScoped<IOrderService>(sp => sp.GetRequiredService<OrderService>())
+        .AddScoped<IOrderPricingService>(sp => sp.GetRequiredService<OrderService>());
 builder.Services.AddScoped<IOrderItemServices, OrderItemServices>();
-builder.Services.AddScoped<IAdditionalMaterialServices, AdditionalMaterialServices>();
-builder.Services.AddScoped<IComboMaterialServices, ComboMaterialServices>();
+builder.Services.AddScoped<IAdditionalMaterialService, AdditionalMaterialService>();
+builder.Services.AddScoped<IComboMaterialService, ComboMaterialService>();
 
 builder.Services.AddScoped<IRequestTenant, RequestTenant>();
 builder.Services.AddScoped<IRequestLanguage, RequestLanguage>();
