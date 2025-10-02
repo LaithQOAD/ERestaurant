@@ -499,5 +499,5 @@ A ready-to-import **Postman collection (JSON)** is provided with:
 
 * **Swagger not loading**: ensure `Swagger.Enable` is true for the environment, check HTTPS URLs.
 * **SQL connectivity**: verify instance name, `TrustServerCertificate=True` for dev, ensure SQL Browser service is running.
-* **AutoMapper mapping issues**: confirm profiles are registered and `isArabic` flag (if used) is passed during `ProjectTo`.
+* **AutoMapper mapping issues**: confirm profiles are registered and `isArabic` flag (if used) is passed.
 * **Tenant data looks mixed**: confirm `X-Tenant-Id` header is set on every request; verify global query filter is active.
