@@ -1,7 +1,3 @@
-تمام — شلت الأقسام اللي طلبت حذفها. هذا **README المُحدَّث** (جاهز كبديل مباشر):
-
----
-
 # E-Restaurant Web API
 
 A multi-tenant restaurant backend for menus, combos, orders, and add-ons — with built-in localization (Arabic/English), clean error handling, and a developer-friendly architecture (.NET + EF Core).
@@ -119,7 +115,6 @@ Errors follow **ProblemDetails** (RFC-7807). Example:
 * **Performance**: Optimized queries and auto-loading for common navigation properties.
 * **Isolation**: One tenant cannot read/modify another tenant’s data.
 * **Localization**: Names switch language based on `X-Accept-Language`.
-* **Security**: See Developer Guide for authentication/authorization options (varies by deployment).
 
 ### Contact & Support
 
@@ -138,7 +133,6 @@ Errors follow **ProblemDetails** (RFC-7807). Example:
 * **AutoMapper** for mapping and localization shaping
 * **Hellang.Middleware.ProblemDetails** for consistent error responses
 * **Swagger / Swashbuckle** for API docs
-* Optional: **JWT/Identity** if authentication is enabled in your deployment
 
 ### Solution Structure
 
@@ -503,5 +497,5 @@ A ready-to-import **Postman collection (JSON)** is provided with:
 
 * **Swagger not loading**: ensure `Swagger.Enable` is true for the environment, check HTTPS URLs.
 * **SQL connectivity**: verify instance name, `TrustServerCertificate=True` for dev, ensure SQL Browser service is running.
-* **AutoMapper mapping issues**: confirm profiles are registered and `isArabic` flag (if used) is passed during `ProjectTo`.
+* **AutoMapper mapping issues**: confirm profiles are registered and `isArabic` flag (if used) is passed.
 * **Tenant data looks mixed**: confirm `X-Tenant-Id` header is set on every request; verify global query filter is active.
