@@ -115,7 +115,6 @@ Errors follow **ProblemDetails** (RFC-7807). Example:
 * **Performance**: Optimized queries and auto-loading for common navigation properties.
 * **Isolation**: One tenant cannot read/modify another tenant’s data.
 * **Localization**: Names switch language based on `X-Accept-Language`.
-* **Security**: See Developer Guide for authentication/authorization options (varies by deployment).
 
 ### Contact & Support
 
@@ -134,7 +133,6 @@ Errors follow **ProblemDetails** (RFC-7807). Example:
 * **AutoMapper** for mapping and localization shaping
 * **Hellang.Middleware.ProblemDetails** for consistent error responses
 * **Swagger / Swashbuckle** for API docs
-* Optional: **JWT/Identity** if authentication is enabled in your deployment
 
 ### Solution Structure
 
