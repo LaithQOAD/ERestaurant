@@ -155,8 +155,7 @@ namespace ERestaurant.Application.Combos.ComboServices
                 .Take(pagination.Take)
                 .ToListAsync();
 
-            var dtos = _mapper.Map<List<ComboDTO>>(combos, opt => opt.Items["isArabic"] = _language.IsArabic);
-            return dtos;
+            return _mapper.Map<List<ComboDTO>>(combos, opt => opt.Items["isArabic"] = _language.IsArabic);
         }
     }
 }
