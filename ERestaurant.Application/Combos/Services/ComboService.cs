@@ -28,45 +28,7 @@ namespace ERestaurant.Application.Combos.ComboServices
         }
         public async Task<ComboWithAdditionalMaterialDTO> FindAllWithAdditionsAsync(FindAllComboParameterDTO param)
         {
-            var mainQuery = _unitOfWork.Combo.Query();
-
-            if (!string.IsNullOrWhiteSpace(param.searchComboNameQuery))
-            {
-                var term = param.searchComboNameQuery.Trim();
-                mainQuery = mainQuery.Where(c =>
-                    EF.Functions.Like(c.NameEn, $"%{term}%") ||
-                    EF.Functions.Like(c.NameAr, $"%{term}%"));
-            }
-
-            if (!string.IsNullOrWhiteSpace(param.filterComboNameQuery))
-            {
-                var filter = param.filterComboNameQuery.Trim();
-                mainQuery = mainQuery.Where(c => c.NameEn == filter || c.NameAr == filter);
-            }
-
-            if (param.isActive)
-                mainQuery = mainQuery.Where(c => c.IsActive == param.isActive);
-
-            decimal? min = param.minPrice;
-            decimal? max = param.maxPrice;
-            if (min.HasValue && max.HasValue && min > max)
-                (min, max) = (max, min);
-
-            if (min.HasValue) mainQuery = mainQuery.Where(x => x.Price >= min.Value);
-            if (max.HasValue) mainQuery = mainQuery.Where(x => x.Price <= max.Value);
-
-            mainQuery = ApplyOrdering(mainQuery, param.orderBy, param.orderByDirection);
-
-            var total = await mainQuery.CountAsync();
-            var paginationResult = PagingHelper.Compute(param.pageNumber, param.pageSize, total);
-
-            var combos = await mainQuery
-                .Skip(paginationResult.Skip)
-                .Take(paginationResult.Take)
-                .ToListAsync();
-
-            var comboDtos = _mapper.Map<List<ComboDTO>>(
-                combos, opt => opt.Items["isArabic"] = _language.IsArabic);
+            var comboDtos = await SharedFindAllAsync(param);
 
             var additionalMaterialQuery = _unitOfWork.AdditionalMaterial.Query()
                 .Where(a => a.IsActive);
@@ -85,50 +47,10 @@ namespace ERestaurant.Application.Combos.ComboServices
             };
         }
 
+
         public async Task<List<ComboDTO>> FindAllAsync(FindAllComboParameterDTO param)
         {
-            var mainQuery = _unitOfWork.Combo.Query();
-
-            if (!string.IsNullOrWhiteSpace(param.searchComboNameQuery))
-            {
-                var search = param.searchComboNameQuery.Trim();
-                mainQuery = mainQuery.Where(c =>
-                    EF.Functions.Like(c.NameEn, $"%{search}%") ||
-                    EF.Functions.Like(c.NameAr, $"%{search}%"));
-            }
-
-            if (!string.IsNullOrWhiteSpace(param.filterComboNameQuery))
-            {
-                var filter = param.filterComboNameQuery.Trim();
-                mainQuery = mainQuery.Where(c => c.NameEn == filter || c.NameAr == filter);
-            }
-
-            if (param.isActive)
-                mainQuery = mainQuery.Where(c => c.IsActive);
-
-            decimal min = param.minPrice;
-            decimal max = param.maxPrice;
-            bool hasMin = min > 0m;
-            bool hasMax = max > 0m;
-
-            if (hasMin && hasMax && min > max)
-                (min, max) = (max, min);
-
-            if (hasMin) mainQuery = mainQuery.Where(x => x.Price >= min);
-            if (hasMax) mainQuery = mainQuery.Where(x => x.Price <= max);
-
-            mainQuery = ApplyOrdering(mainQuery, param.orderBy, param.orderByDirection);
-
-            int pageNumber = param.pageNumber ?? 1;
-            int pageSize = param.pageSize ?? 10;
-
-            var total = await mainQuery.CountAsync();
-            var pagination = PagingHelper.Compute(pageNumber, pageSize, total);
-
-            var combos = await mainQuery
-                .Skip(pagination.Skip)
-                .Take(pagination.Take)
-                .ToListAsync();
+            var combos = await SharedFindAllAsync(param);
 
             return _mapper.Map<List<ComboDTO>>(
                 combos, opt => opt.Items["isArabic"] = _language.IsArabic);
@@ -190,6 +112,51 @@ namespace ERestaurant.Application.Combos.ComboServices
                 "isactive" => desc ? q.OrderByDescending(c => c.IsActive) : q.OrderBy(c => c.IsActive),
                 _ => desc ? q.OrderByDescending(c => c.CreatedDate) : q.OrderBy(c => c.CreatedDate),
             };
+        }
+
+
+        private async Task<List<ComboDTO>> SharedFindAllAsync(FindAllComboParameterDTO param)
+        {
+            var mainQuery = _unitOfWork.Combo.Query();
+
+            if (!string.IsNullOrWhiteSpace(param.searchComboNameQuery))
+            {
+                var term = param.searchComboNameQuery.Trim();
+                mainQuery = mainQuery.Where(c =>
+                    EF.Functions.Like(c.NameEn, $"%{term}%") ||
+                    EF.Functions.Like(c.NameAr, $"%{term}%"));
+            }
+
+            if (!string.IsNullOrWhiteSpace(param.filterComboNameQuery))
+            {
+                var filter = param.filterComboNameQuery.Trim();
+                mainQuery = mainQuery.Where(c => c.NameEn == filter || c.NameAr == filter);
+            }
+
+            if (param.isActive)
+                mainQuery = mainQuery.Where(c => c.IsActive == param.isActive);
+
+            decimal? min = param.minPrice;
+            decimal? max = param.maxPrice;
+            if (min.HasValue && max.HasValue && min > max)
+                (min, max) = (max, min);
+
+            if (min.HasValue) mainQuery = mainQuery.Where(x => x.Price >= min.Value);
+            if (max.HasValue) mainQuery = mainQuery.Where(x => x.Price <= max.Value);
+
+            mainQuery = ApplyOrdering(mainQuery, param.orderBy, param.orderByDirection)
+                           .AsNoTracking();
+
+            var total = await mainQuery.CountAsync();
+            var pagination = PagingHelper.Compute(param.pageNumber, param.pageSize, total);
+
+            var combos = await mainQuery
+                .Skip(pagination.Skip)
+                .Take(pagination.Take)
+                .ToListAsync();
+
+            var dtos = _mapper.Map<List<ComboDTO>>(combos, opt => opt.Items["isArabic"] = _language.IsArabic);
+            return dtos;
         }
     }
 }
